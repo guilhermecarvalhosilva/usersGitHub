@@ -1,5 +1,6 @@
 function verificarInput() {
     let nameUser = document.getElementById('nameUser').value 
+    document.getElementsByClassName('card')[0].classList.remove('open')
     
     if(nameUser.length > 0) {
       return chamarApi(nameUser)
