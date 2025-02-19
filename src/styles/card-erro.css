@@ -1,0 +1,25 @@
+.conteudo .card-erro {
+    background-color: var(--background-card);
+    max-width: 650px;
+    width: 95%;
+    height: auto;
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px 0px;
+    border-radius: 10px;
+    display: none;
+}
+
+.conteudo .card-erro.open {
+    display: flex;
+}
+
+.conteudo .card-erro .mensagem-erro{
+    color: var(--color-text-principal);
+    color: var(--color-erro);
+    font-size: 1.1em;
+    font-weight: 500;
+}

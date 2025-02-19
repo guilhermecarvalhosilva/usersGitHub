@@ -1,0 +1,162 @@
+.conteudo .card {
+    background-color: var(--background-card);
+    max-width: 650px;
+    width: 95%;
+    height: auto;
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px 0px;
+    border-radius: 10px;
+    display: none;
+}
+
+.conteudo .card.open {
+    display: flex;
+}
+
+.conteudo .card .card-imagem {
+    max-width: 180px;
+    max-height: 180px;
+    height: 95%;
+    width: 95%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--background);
+}
+
+.conteudo .card .card-imagem .imagem-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteudo .card .card-item {
+    width: 93%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;
+    justify-content: center;
+}
+
+.conteudo .card .card-item .card-titulo {
+    color: var(--color-text-principal);
+    font-size: 1.1em;
+}
+
+.conteudo .card .card-item .card-informacoes {
+    padding: 0px 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px 0px;
+}
+
+.conteudo .card .card-item .card-informacoes .informacoes-item {
+    display: flex;
+    flex-direction: row;
+    gap: 0px 10px;
+    width: 100%;
+    height: auto;
+}
+
+
+.conteudo .card .card-item .card-informacoes .informacoes-item  .informacoes-name {
+    color: var(--color-text-principal);
+    font-size: 1em;
+    font-weight: 600;
+    height: 100%;
+    width: 10%;
+}
+
+.conteudo .card .card-item .card-informacoes .informacoes-item  .informacoes-desc {
+    color: var(--color-text-principal);
+    font-size: 1em;
+    font-weight: 400;
+    height: 100%;
+    width: 90%;
+}
+
+
+.conteudo .card .card-item .github-botao {
+    background-color: var(--color-preto);
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 180px;
+    width: 95%;
+    height: 55px;
+}
+
+.conteudo .card .card-item .github-botao .github-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 15px;
+    text-decoration: none;
+    color: var(--color-text-principal);
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.conteudo .card .card-item .github-botao .github-item .icon-github {
+    font-size: 1.5em;
+}
+
+
+.conteudo .card .card-item .card-projetos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px 12px;
+}
+
+.conteudo .card .card-item .card-projetos .projetos-item {
+    background-color: var(--background);
+    width: 49%;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-text-principal);
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+@media(max-width: 700px) {
+    .conteudo .card .card-item .card-projetos .projetos-item {
+        width: 100%;
+    }
+    
+}
+
+
+
+@media(max-width: 670px) {
+    .conteudo .card .card-item .card-informacoes .informacoes-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .conteudo .card .card-item .card-informacoes .informacoes-item  .informacoes-name, 
+    .conteudo .card .card-item .card-informacoes .informacoes-item  .informacoes-desc {
+        max-width: 700px;
+        width: 100%;
+    }
+    
+}
+

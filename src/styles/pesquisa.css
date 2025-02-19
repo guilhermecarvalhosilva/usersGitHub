@@ -1,0 +1,78 @@
+.conteudo {
+    background-color: var(--background);
+    width: 100%;
+    min-height: 100vh;
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 0;
+}
+
+.conteudo .pesquisa {
+    max-width: 580px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px 0px;
+}
+
+.conteudo .pesquisa .pesquisa-titulo {
+    color: var(--color-text-principal);
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.conteudo .pesquisa [type="text"] {
+    background-color: var(--color-text-principal);
+    width: 85%;
+    height: 55px;
+    border-radius: 5px;
+    text-indent: 15px;
+    border: 3px solid var(--color-text-secundaria);
+    color: var(--color-text-secundaria);
+    font-weight: 500;
+    outline: none;
+}
+
+.conteudo .pesquisa [type="text"]::placeholder {
+    color: var(--color-text-secundaria);
+    font-weight: 500;
+}
+
+.conteudo .pesquisa .span-creditos {
+    color: var(--color-text-principal);
+    font-size: 0.95em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.conteudo .pesquisa .span-creditos .span-link {
+    color: var(--color-text-principal);
+    font-size: 0.95em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.conteudo .pesquisa .pesquisa-botao {
+    cursor: pointer;
+    max-width: 200px;
+    width: 100%;
+    height: 55px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--background-card);
+    color: var(--color-text-principal);
+    font-size: 1em;
+    font-weight: 500;
+}
+
+@media(max-width: 500px) {
+    
+
+    .conteudo .pesquisa .pesquisa-titulo  {
+        font-size: 1.3em;
+    }
+}

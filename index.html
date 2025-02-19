@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontre algum perfil no GitHub - usersGitHub</title>
+    <link rel="stylesheet" href="./src/styles/index.css">
+</head>
+<body>
+    <main class="conteudo">
+        <section class="pesquisa">
+            <h1 class="pesquisa-titulo">Qual usuario você procura no GitHub ?</h1>
+            <input type="text" id="nameUser" placeholder="Digite aqui: ">
+            <button class="pesquisa-botao" onclick="verificarInput()">Buscar</button>
+            <span class="span-creditos">&copy;Desenvolvido por <a href="#" target="_blank" class="span-link">Guilherme Carvalho</a></span>
+        </section>
+
+        <section class="card">
+            <article class="card-imagem">
+                
+            </article>
+
+            <article class="card-item">
+                <h2 class="card-titulo">Informações pessoais</h2>
+                <div class="card-informacoes">
+                    <div class="informacoes-item">
+                        <span class="informacoes-name">Nome:</span>
+                        <p class="informacoes-desc"></p>
+                    </div>
+                    <div class="informacoes-item">
+                        <span class="informacoes-name">Login:</span>
+                        <p class="informacoes-desc"></p>
+                    </div>
+                    <div class="informacoes-item">
+                        <span class="informacoes-name">ID:</span>
+                        <p class="informacoes-desc"></p>
+                    </div>
+                </div>
+                <div class="github-botao">
+                </div>
+            </article>
+
+            <article class="card-item">
+                <h2 class="card-titulo">Repositorios no Github</h2>
+                <div class="card-projetos">
+                </div>
+            </article>
+        </section>
+
+        <section class="card-erro">
+            <p class="mensagem-erro">Usuário não encontrado</p>
+        </section>
+    </main>
+
+    <script src="./src/script/requisicao.js"></script>
+</body>
+</html>
