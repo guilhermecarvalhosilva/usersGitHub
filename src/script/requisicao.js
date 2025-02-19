@@ -28,9 +28,6 @@ async function consumirApi(users) {
         // Variavel com todos os repositorios do perfil escolhido
         let projetos = await projetosAPI.json()
 
-        let card = document.getElementsByClassName('card')[0]
-        card.classList.add('open')
-
         //Importar a foto do perfil da pessoa
         let foto = document.getElementsByClassName('card-imagem')[0]
         foto.innerHTML = `<img src="${users.avatar_url}" alt="Foto do perfil" class="imagem-item">`
@@ -52,14 +49,14 @@ async function consumirApi(users) {
 
         //Importar os repositorios de cada perfil do github da pessoa
         let cardProjeto = document.getElementsByClassName('card-projetos')[0]
+        
         cardProjeto.innerHTML = ``
-        // cardProjeto.innerHTML = ` <a href="${projetos[0].html_url}" target="_blank" class="projetos-item">${projetos[0].name}</a>`
-        // cardProjeto.innerHTML += ` <a href="#" target="_blank" class="projetos-item">Html-css</a>`
         for(var i = 0; i < projetos.length; i++) {
             cardProjeto.innerHTML += ` <a href="${projetos[i].html_url}" target="_blank" class="projetos-item">${projetos[i].name}</a>`
         }
 
-
+        let card = document.getElementsByClassName('card')[0]
+        card.classList.add('open')
     }
 
 }
